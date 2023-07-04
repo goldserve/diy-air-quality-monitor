@@ -274,7 +274,7 @@ void Webserver::handSubmitConfigRequest(AsyncWebServerRequest *request)
     }
     Serial.printf(
         "  The MQTT server connection has been %s\n",
-        this->_config.getJSONUploadEnabled() ? "ENABLED" : "DISABLED"
+        this->_config.getMQTTEnabled() ? "ENABLED" : "DISABLED"
     );
 
     if (request->hasParam("mqtt-server")) {
