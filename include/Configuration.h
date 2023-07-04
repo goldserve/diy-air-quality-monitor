@@ -60,7 +60,7 @@
 // Most "home brew" BME680 boards use the address of 0x76. Change the value here according to how your BME680 sensor is
 // configured. If you are not using a BME680 censor, then this address can be any value.
 #ifndef BME680_SENSOR_I2C_ADDRESS
-#define BME680_SENSOR_I2C_ADDRESS   0x77
+#define BME680_SENSOR_I2C_ADDRESS   0x76
 #endif
 
 // Selects which ESP32 microcontroller is being used. Note that for boards that do not have PSRAM, it is recommended to
