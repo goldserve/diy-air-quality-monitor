@@ -43,7 +43,7 @@ Application::Application()
 #endif
     _loopCounter(0),
     _appSetup(false),
-    _hasBME680(false),
+    _hasBME680(true),
     _latestTemperature(UNSET_ENVIRONMENT_VALUE),
     _latestPressure(UNSET_ENVIRONMENT_VALUE),
     _latestHumidity(UNSET_ENVIRONMENT_VALUE),
