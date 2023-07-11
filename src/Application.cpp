@@ -468,7 +468,7 @@ void Application::loop(void)
       && (_bme680.temperature > -50.0)    // gaurd against errors that result in nonsensical values.
       && (_bme680.temperature < 100.0)    // gaurd against errors that result in nonsensical values.
     ) {
-      _latestTemperature = _bme680.temperature;        // °C
+      _latestTemperature = _bme680.temperature - 2;        // °C Selfheating offset
       _latestPressure = _bme680.pressure / 100.0;      // hPa
       _latestHumidity = _bme680.humidity;              // %
     } else {
